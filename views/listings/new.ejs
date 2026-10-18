@@ -24,31 +24,81 @@
         <div class="mb-3">
             <label for="image" class="form-label">Upload Image</label>
             <input name="listing[image]" type="file" class="form-control" />
-            required
+            
         </div>
 
         
+        
         <div class="mb-3">
-            <label for="category" class="form-label">Category</label>
-            <select
-                name="listing[category]"
-                id="category"
-                class="form-select"
-                required
-            >
-                <option value="">Select a category</option>
-                <option value="Trending">Trending</option>
-                <option value="Trending">Rooms</option>
-                <option value="Iconic Cities">Iconic Cities</option>
-                <option value="Castles">Castles</option>
-                <option value="Amazing Pools">Amazing Pools</option>
-                <option value="Camping">Camping</option>
-                <option value="Farms">Farms</option>
-                <option value="Arctic">Arctic</option>
-                <option value="Beaches">Beaches</option>
-                <option value="Boats">Boats</option>
-            </select>
+            <label class="form-label">Categories</label>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox"
+                    name="listing[categories]" value="Trending" id="trending">
+                <label class="form-check-label" for="trnding">Trending</label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox"
+                    name="listing[categories]" value="Rooms" id="rooms">
+                <label class="form-check-label" for="rooms">Rooms</label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox"
+                    name="listing[categories]" value="Iconic Cities" id="iconicCities">
+                <label class="form-check-label" for="iconicCities">Iconic Cities</label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox"
+                    name="listing[categories]" value="Castle" id="castle">
+                <label class="form-check-label" for="castle">Castle</label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox"
+                    name="listing[categories]" value="Amazing Pools" id="pools">
+                <label class="form-check-label" for="pools">Amazing Pools</label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox"
+                    name="listing[categories]" value="Camping" id="camping">
+                <label class="form-check-label" for="camping">Camping</label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox"
+                    name="listing[categories]" value="Farms" id="farms">
+                <label class="form-check-label" for="farms">Farms</label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox"
+                    name="listing[categories]" value="Arctic" id="arctic">
+                <label class="form-check-label" for="arctic">Arctic</label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox"
+                    name="listing[categories]" value="Beaches" id="beaches">
+                <label class="form-check-label" for="beaches">Beaches</label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox"
+                    name="listing[categories]" value="Domes" id="domes">
+                <label class="form-check-label" for="domes">Domes</label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox"
+                    name="listing[categories]" value="Boats" id="boats">
+                <label class="form-check-label" for="boats">Boats</label>
+            </div>
         </div>
+
 
 
         <div class="row">

@@ -27,7 +27,7 @@ module.exports.index = async (req, res) => {
 
     // Filter by category
     if (category && category !== "Trending") {
-        filter.category = category;
+        filter.categories = category;
     }
 
     const allListings = await Listing.find(filter);

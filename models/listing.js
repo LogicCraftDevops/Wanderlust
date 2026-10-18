@@ -36,7 +36,8 @@ const listingSchema = new Schema({
             required: true
         }
     },
-    category: {
+    categories: {
+        type: [{
     type: String,
     enum: [
         "Trending",
@@ -51,6 +52,8 @@ const listingSchema = new Schema({
         "Domes",
         "Boats"
     ]
+    }],
+    default: []
     }
 });
 
